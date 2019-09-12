@@ -16,7 +16,7 @@ Studiju kursa Datormācība (pamatkurss) elektroniskā klade
  - **[komanda] -a** visa pieejama informacija, piemeram **ls -a** parada visu informaciju par objektu sarakstu
  - **[komanda] -al** apvieno **-a** un **-l** (parada padzilinatu info un timestamp)
  - **cd [nosaukums]** change directory
- - **cd ~** doties uz majas directory (majas directory apzime ar "~" vai "home")
+ - **cd ~**  doties uz majas directory (majas directory apzime ar "~" vai "home")
  - **cd ~/Documents/** ieiet noraditas mapes directory
  - **sh** komandu valoda sh
  - **bash** komandu valoda bash
