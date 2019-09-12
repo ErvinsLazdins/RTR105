@@ -2,7 +2,7 @@
 Studiju kursa Datormācība (pamatkurss) elektroniskā klade
 - **firefox** izsauc firefox internetu
 - **clear** notira ekranu
-- **firefox &** & simbols liek programmai stradat backgrounda
+- **firefox &** simbols & liek programmai stradat backgrounda
 - **man [programma]** parada programmas instrukciju
  - **echo [teksts]** attelo ierakstito tekstu
  - **echo $0** attelo mainigo, ar kuru strada (piemeram, bash)
