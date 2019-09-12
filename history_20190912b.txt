@@ -1,0 +1,218 @@
+    1  VirtualBox --startvm XP
+    2  quartus
+    3  exit
+    4  firefox
+    5  clear
+    6  firefox &
+    7  man firefox 
+    8  clear
+    9  cho $0
+   10  echo $
+   11  clear
+   12  echo $
+   13  echo$
+   14  echo $0
+   15  uname
+   16  man uname
+   17  uname -a
+   18  clear
+   19  uname -a
+   20  whoami
+   21  who
+   22  pwd
+   23  ls
+   24  ls -l
+   25  ls -a
+   26  ls-al;
+   27  ls-al
+   28  ls -al
+   29  cd
+   30  ls -la
+   31  pwd
+   32  cs .
+   33  cd .
+   34  whereami
+   35  whereamiwhereami
+   36  pwd
+   37  cd .
+   38  cs ..
+   39  cd ..
+   40  pwd
+   41  cd ..
+   42  pwd
+   43  ls -a
+   44  cd .
+   45  pwd
+   46  cd ~
+   47  pwd
+   48  cd /
+   49  pwd
+   50  cd home/
+   51  pwd
+   52  cd /home/user
+   53  pw
+   54  dpwd
+   55  pwd
+   56  cd ~/
+   57  cs ~/Documents/
+   58  cd ~/Documents/
+   59  pwd
+   60  whoami
+   61  cd
+   62  pwd
+   63  sh
+   64  sh
+   65  pwd
+   66  whoami
+   67  whereami
+   68  lohs
+   69  ph
+   70  sh
+   71  cd home
+   72  cd ~
+   73  whereami
+   74  pwd
+   75  cd /
+   76  pwd
+   77  mkdir
+   78  mkdir  manamape
+   79  cd 
+   80  pwd
+   81  ls
+   82  mkdir  ManaMape
+   83  ls
+   84  ls -l
+   85  cd ManaMape/
+   86  ls -a
+   87  ls -al
+   88  /cd 
+   89  pwd
+   90  /cd ~
+   91  pwd
+   92  history
+   93  /cd
+   94  /cd ~
+   95  cd ..
+   96  pwd
+   97  rmdir ManaMape/
+   98  history
+   99  history > history_20190912.txt
+  100  echo
+  101  man echo
+  102  uname
+  103  uname -a
+  104  pwd
+  105  pwd -a
+  106  whoami
+  107  who
+  108  pwd
+  109  ls
+  110  /cd desktop
+  111  cd documents
+  112  ls -l
+  113  ls -a
+  114  man unameman uname
+  115  ls -al
+  116  ls -a
+  117  ls -l
+  118  ls -al
+  119  ls -a
+  120  pwd
+  121  cs
+  122  whereami
+  123  whereamiwhereami
+  124  cd ~
+  125  pwd
+  126  sh
+  127  history
+  128  touch aaa.txt
+  129  ls -l
+  130  cat aaa.txt
+  131  cat bbb.txt
+  132  echo Pirmais teksts
+  133  echo Pirmais teksts > aaa.txt
+  134  cat aaa.txt
+  135  ls -l aaa.txt
+  136  echo Otrais teksts >aaa.txt
+  137  cat aaa.txt
+  138  echo Pirmais teksts > aaa.txt
+  139  echo Otrais teksts >> aaa.txt
+  140  cat aaa.txt
+  141  ls -l aaa.txt
+  142  nano aaa.txt
+  143  fg
+  144  nano aaa.txt
+  145  ls -l aaa.txt
+  146  cat aaa.txt
+  147  cp aaa.txt bbb.txt
+  148  ls
+  149  ls -l
+  150  cat bbb.txt
+  151  cat aaa.txt
+  152  cd /
+  153  pwd
+  154  mv ~/aaa.txt ~/Documents/CCC.txt
+  155  ls -l
+  156  cd ~
+  157  ls -l
+  158  ls -l Documents/
+  159  ls -l cat Documents/CCC.txt 
+  160  cat Documents/CCC.txt 
+  161  cd ..
+  162  pwd
+  163  cd ~
+  164  pwd
+  165  mv ./Documents//CCC.txt ddd.txt
+  166  ls -l
+  167  mkdir ManaMape
+  168  mv *.txt ManaMape/
+  169  ls -l
+  170  ls -l ManaMape/
+  171  cd ManaMape$ rm bbb.txt
+  172  ManaMape/ rm bbb.txt
+  173  cd ManaMape/
+  174  pwd
+  175  rm bbb.txt 
+  176  /ls -l 
+  177  rm 
+  178  cd ~
+  179  rm ManaMape/
+  180  rm -fr ManaMape/
+  181  ls
+  182  ls -l
+  183  nano MansPirmaisSkripts.sh
+  184  ls -l
+  185  MansPirmaisSkripts.sh
+  186  echo $PATH
+  187  ls /bin | grep ls
+  188  ls -l /bin/ls
+  189  cat /bin/ls
+  190  ~/MansPirmais
+  191  echo $PATH
+  192  $PATH=#PATH:~
+  193  $PATH=#PATH:~/
+  194  ~$ echo $PATH
+  195  echo $PATH
+  196  PATH=$PATH:~/
+  197  echo $PATH
+  198  ls
+  199  MansPirmaisSkripts.sh
+  200  ls -l
+  201  chmod 740 MansPirmaisSkripts.sh 
+  202  ls -l
+  203  MansPirmaisSkripts.sh 
+  204  ls -l
+  205  ls -l ManaMapeAuto/
+  206  cat ManaMapeAuto/fff.txt
+  207  echo path
+  208  echo $PATH 
+  209  MansPirmaisSkripts.sh 
+  210  ls -l
+  211  ls
+  212  cat ManaMapeAuto/
+  213  cat ManaMapeAuto/fff.txt
+  214  nano fff.txt
+  215  cat MansPirmaisSkripts.sh 
+  216  nano MansPirmaisSkripts.sh 
+  217  history
+  218  history >history_20190912b.txt
