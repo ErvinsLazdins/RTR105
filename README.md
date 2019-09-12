@@ -3,6 +3,7 @@ Studiju kursa Datormācība (pamatkurss) elektroniskā klade
 
 
 ## Class 02
+- **init 0** izsledz datoru
 - **firefox** izsauc firefox internetu
 - **clear** notira ekranu
 - **firefox &** simbols & liek programmai stradat backgrounda
@@ -10,7 +11,7 @@ Studiju kursa Datormācība (pamatkurss) elektroniskā klade
  - **echo [teksts]** attelo ierakstito tekstu
  - **echo $0** attelo mainigo, ar kuru strada (piemeram, bash)
  - **uname** OS nosaukums
- - **[komanda] -a** padzilinata info par mapiz
+ - **[komanda] -a** padzilinata info par mapi
  - **whoami** manu permission limenis (user/admin)
  - **who** mans lietotajs
  - **pwd** pasreizejais directory
@@ -30,3 +31,12 @@ Studiju kursa Datormācība (pamatkurss) elektroniskā klade
  
  ## Class 03
  
+- **cat [nosaukums].txt** 
+- **mkdir** izveidot directory
+- **rmdir** izdzest directory
+- **nano** teksta editors (ka notepad terminalaa)
+- **touch** izveido tuksu teksta dokumentu
+- **$PATH** sistemas mainigais, kurs satur sistemas celus
+- **cp** kopet
+- **mv** parvietot / move
+- ***.txt** zvaigznīte * simbolizē visus dokumentus ar .txt extension
