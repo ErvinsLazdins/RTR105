@@ -1,5 +1,8 @@
 # RTR105
 Studiju kursa Datormācība (pamatkurss) elektroniskā klade
+
+
+## Class 02
 - **firefox** izsauc firefox internetu
 - **clear** notira ekranu
 - **firefox &** simbols & liek programmai stradat backgrounda
@@ -25,5 +28,5 @@ Studiju kursa Datormācība (pamatkurss) elektroniskā klade
  - **history** sarakstito komandu vesture
  
  
- 
+ ## Class 03
  
