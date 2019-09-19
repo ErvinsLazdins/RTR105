@@ -1,0 +1,76 @@
+    1  VirtualBox --startvm XP
+    2  quartus
+    3  firefox
+    4  ls =l
+    5  ls -l
+    6  pwd
+    7  cd RTR105/
+    8  pwd
+    9  ls -l
+   10  nano git-upload
+   11  ls -l
+   12  chmod 700 git-upload 
+   13  ls =a
+   14  ls -a
+   15  ls -la
+   16  ./git-upload 
+   17  cat git-upload 
+   18  ./git-upload 20190919_15:00
+   19  pwd
+   20  ls -la
+   21  clear
+   22  nano elemenary.c
+   23  mkdir darbi
+   24  mv elemenary.c darbi/
+   25  ls
+   26  cd darbi/
+   27  ls
+   28  clear
+   29  gcc elemenary.c 
+   30  nano elemenary.c 
+   31  ls
+   32  ls-a
+   33  ls -a
+   34  gcc elemenary.c 
+   35  nano elemenary.c 
+   36  gcc elemenary.c 
+   37  gcc elemenary.c  -o prg1
+   38  ./prg1
+   39  ls -a
+   40  nano elemenary.c 
+   41  gcc elemenary.c -o prg2
+   42  nano elemenary.c 
+   43  gcc elemenary.c -o prg2
+   44  nano elemenary.c 
+   45  cat prg1
+   46  cat prg2
+   47  clear
+   48  cp elemenary.c hello.c
+   49  ls -l
+   50  nano hello.c 
+   51  gcc hello.c  -o hello
+   52  nano hel
+   53  nano hello.c 
+   54  gcc hello.c  -o hello
+   55  nano hello.c 
+   56  gcc hello.c  -o hello
+   57  cat  hello.c
+   58  nano hello.c 
+   59  gcc hello.c  -o hello
+   60  ls -l
+   61  nano hello.c 
+   62  gcc hello.c  -o hello
+   63  nano hello.c
+   64  gcc hello.c  -o hello
+   65  nano hello.c
+   66  gcc hello.c  -o hello
+   67  nano hello
+   68  nano hello.c
+   69  gcc hello.c  -o hello
+   70  cat hello.c
+   71  rm prg*
+   72  ls -l
+   73  rm hello
+   74  ls -l 
+   75  cd ..
+   76  history > history_20190919_16_00

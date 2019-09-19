@@ -40,3 +40,6 @@ Studiju kursa Datormācība (pamatkurss) elektroniskā klade
 - **cp** kopet
 - **mv** parvietot / move
 - ***.txt** zvaigznīte * simbolizē visus dokumentus ar .txt extension
+## Class 04
+
+- **gcc** kompileshana
