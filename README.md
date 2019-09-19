@@ -42,4 +42,4 @@ Studiju kursa Datormācība (pamatkurss) elektroniskā klade
 - ***.txt** zvaigznīte * simbolizē visus dokumentus ar .txt extension
 ## Class 04
 
-- **gcc** kompileshana
+- **gcc [skripta nosaukums] -o [kompiletais gala nosaukums]** kompileshana
