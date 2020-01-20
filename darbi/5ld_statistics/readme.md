@@ -80,8 +80,6 @@ j=0;
 	 return 0;
 }
 ```
-#### Komentāri par kodu
-Programma strādā kā paredzēts, nav novērojamas problēmas
 
 ## Rezultāts
 ```
@@ -111,5 +109,6 @@ Garums 13 	 q 	 113
 
 ```
 ## Analīze
+Programmas darbība problēmas nav konstatētas, tomēr, vairāk piestrādājot, būtu iespējams saīsināt kodu.
 
 ## Attēli
