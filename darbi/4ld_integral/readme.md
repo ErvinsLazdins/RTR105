@@ -20,7 +20,6 @@ Beigas:
 Izvēlieties precizitāti:
 6
 
-
 Laukuma vērtība (starp f(x) un x asi) tika aprēķināta pēc 3 dažādiem likumiem
 Rezultāti apkopoti tabulā
 	--------------------------------------------------------
