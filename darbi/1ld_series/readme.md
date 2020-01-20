@@ -4,8 +4,6 @@
 
 ## Programmas Kods 
 ``` 
-  GNU nano 2.9.3                               1ld_series.c                                          
-
 #include <stdio.h>
 #include <math.h>
 
