@@ -2,7 +2,8 @@
 
 ## Teorija
 
-dddddddd
+Integrālis ir viens no svarīgākajiem matemātiskās analīzes jēdzieniem. To parasti izmanto, lai atrastu daudzuma vērtības, tādas kā laukums, tilpums, masa, pārvietojums u.c., kad ir dots šī lieluma izmaiņu ātrums attiecībā pret citu lielumu (vieta, laiks u.c.). Piemēram, lai noteiktu laukumu starp divām līknēm, kas ierobežotas ar divām robežtaisnēm, jānosaka funkcijas integrālis, kas rāda divu funkciju vērtību atšķirību starp šīm robežām.
+Eksistē vairāki integrēšanas paņēmieni, tomēr rezultāts tiek iegūts nemainīgs
 
 ## Programmas kods
 ```
