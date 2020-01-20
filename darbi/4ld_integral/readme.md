@@ -19,10 +19,15 @@ Beigas:
 3.3
 Izvēlieties precizitāti:
 6
-Laukuma vērtība (starp f(x) un x asi) pēc Trapeces likuma: 5.116394
-Laukuma vērtība (starp f(x) un x asi) pēc Taisnstūra likuma: 5.116395
-Laukuma vērtība (starp f(x) un x asi) pēc Simsona likuma: 5.116394
 
+
+Laukuma vērtība (starp f(x) un x asi) tika aprēķināta pēc 3 dažādiem likumiem
+Rezultāti apkopoti tabulā
+	--------------------------------------------------------
+	| Trapeces likums | Taisnstūra likums | Simsona likums |
+	--------------------------------------------------------
+	|    5.116394	  | 	5.116395      |     5.116394   |
+	--------------------------------------------------------
 ```
 ## Analīze
 
