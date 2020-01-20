@@ -109,6 +109,6 @@ Garums 13 	 q 	 113
 
 ```
 ## Analīze
-Programmas darbība problēmas nav konstatētas, tomēr, vairāk piestrādājot, būtu iespējams saīsināt kodu.
+Programmas darbībā problēmas nav konstatētas, tomēr, vairāk piestrādājot, būtu iespējams saīsināt kodu.
 
 ## Attēli
