@@ -67,7 +67,7 @@ j=0;
   }
   else if(in_st[i] != in_st[i+1]){
    if (max==j){
-    printf("Simbolu rindas moda ir %d\n", in_st[i]);
+    printf("Pēc ASCII tabulas moda ir %d\n", in_st[i]);
     }
   j=0;
   }
@@ -90,7 +90,7 @@ Pēc ASCII tabulas mazākā vērtība ir: 49
 Pēc ASCII tabulas lielākā vērtība ir: 113
 Pēc ASCII tabulas vidējā vērtība ir: 77
 Pēc ASCII tabulas mediāna ir: 81
-Simbolu rindas moda ir 101
+Pēc ASCII tabulas moda ir 101
 Garums 0 	 1 	 49
 Garums 1 	 2 	 50
 Garums 2 	 2 	 50
