@@ -2,7 +2,7 @@
 
 ## Teorija
 
-ASCII kods ir rakstzīmju kopa un kodējums, ko visplašāk izmanto programmēšanā - datoros un citās komunikāciju ierīces, lai attēlotu tekstu un kontrolētu ierīces, kas strādā ar tekstu. 
+ASCII kods ir rakstzīmju kopa un kodējums, ko visplašāk izmanto programmēšanā - datoros un citās komunikāciju ierīces, lai attēlotu tekstu un kontrolētu ierīces, kas strādā ar tekstu. Pastāv ASCII tabula, kurā apkopoti pieejamie simboli un to pārveidojumi dažādās skaitīšanas sistemās.
 
 ## Programmas Kods 
 ``` 
@@ -119,5 +119,3 @@ Garums 23 	 y 	 121
 ```
 ## Analīze
 Programmas darbībā problēmas nav konstatētas, tomēr, vairāk piestrādājot, būtu iespējams saīsināt kodu.
-
-## Attēli
