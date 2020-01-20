@@ -1,7 +1,7 @@
 # Nr.1 Laboratorijas darbs - Teilora rindas
 
 ## Teorija
-
+Teilora rinda matemātikā ir funkcijas attēlojums kā bezgalīga saskaitāmo summa, kur šie saskaitāmie ir funkcijas atvasīnājuma vērtības kādā konkrētā punktā. 
 ## Programmas Kods 
 ``` 
 #include <stdio.h>
@@ -56,8 +56,6 @@ printf("\n\n");
 
 
 ```
-Komentāri par kodu
-
 ## Rezultāts
 ```
 Pētāmā funkcija ir y=sin(x)*sin(x)
@@ -89,6 +87,6 @@ Esiet ievadījis x vērtību: 0.943000
   				(2*k)*(2*k-1)
 ```
 ## Analīze
-
+Ar Teilora rindu metodi tiek iegūts rezultāts ar augstu precizitāti. Programmā uzdots obligāti izpildīt 500 iterācijas, kas, teorētiski, dod precīzu rezultātu, tomēr noved pie tā, ka saskaitāmo vērtības kļūst tik mazas, ka tiek izvadīta nulle, nevis ļoti ļoti mazs skaitlis. Attiecīgi lai redzētu šos mazos skaitļus, būtu jāsamazina iterāciju skaits.
 ## Attēli
 ![Funkcijas grafiks](https://github.com/ErvinsLazdins/RTR105/blob/master/darbi/1ld_series/sin(x)*sin(x).png)
