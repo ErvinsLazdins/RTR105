@@ -93,3 +93,4 @@ Esiet ievadījis x vērtību: 0.943000
 ## Analīze
 
 ## Attēli
+![Funkcijas grafiks](https://github.com/ErvinsLazdins/RTR105/blob/master/darbi/1ld_series/sin(x)*sin(x).png)
