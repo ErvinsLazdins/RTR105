@@ -30,7 +30,7 @@ Rezultāti apkopoti tabulā
 	--------------------------------------------------------
 ```
 ## Analīze
-
+Visi trīs izmantotie likumi dod nosacīti pareizu rezultātu, taču, palielinot pieprasīto precizitāti, iegūtie rezultāti sāk atšķirties. Piemēram, konkrētajā piemērā rezultāts sāk atšķirties sākot ar sesto ciparu aiz komata. Katram likumam ir savu plusi un mīnusi, tāpēc pēc situācijas būtu jāizvertē kuru no tiem izmantot.
 ## Attēli
 ![grafiks](https://github.com/ErvinsLazdins/RTR105/blob/master/darbi/4ld_integral/4ld_gnuplot.png)
 ![wolframpieradijums](https://github.com/ErvinsLazdins/RTR105/blob/master/darbi/4ld_integral/4ld_wolframalpha.png)
