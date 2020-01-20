@@ -80,10 +80,36 @@ j=0;
 	 return 0;
 }
 ```
-Komentāri par kodu
+#### Komentāri par kodu
+Programma strādā kā paredzēts, nav novērojamas problēmas
 
 ## Rezultāts
+```
+Lietotāj, lūdzu ievadiet simbolu rindu:
+21q9e8hn3ee;Q2
+Ievadītās rindas garums ir 14 simboli
+Pēc ASCII tabulas mazākā vērtība ir: 49
+Pēc ASCII tabulas lielākā vērtība ir: 113
+Pēc ASCII tabulas vidējā vērtība ir: 77
+Pēc ASCII tabulas mediāna ir: 81
+Ivadītās rindas moda ir 101
+Garums 0 	 1 	 49
+Garums 1 	 2 	 50
+Garums 2 	 2 	 50
+Garums 3 	 3 	 51
+Garums 4 	 8 	 56
+Garums 5 	 9 	 57
+Garums 6 	 ; 	 59
+Garums 7 	 Q 	 81
+Garums 8 	 e 	 101
+Garums 9 	 e 	 101
+Garums 10 	 e 	 101
+Garums 11 	 h 	 104
+Garums 12 	 n 	 110
+Garums 13 	 q 	 113
 
+
+```
 ## Analīze
 
 ## Attēli
