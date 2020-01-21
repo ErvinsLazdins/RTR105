@@ -2,7 +2,7 @@
 
 ## Teorija
 
-dddddddd
+Ar šo programmu iespējams aprēķināt funkcijas x vērtību pēc dotās y vērtībās, iespējams arī izvēlēties intervālu, kurā meklēt šīs saknes. Rezultātā var ar izvēlētu precizitāti veikt aprēķinus, un arī uzzināt, cik iterāciju bija nepieciešams veikt, lai nonāktu pie rezultāta.
 
 ## Programmas kods
 ```
