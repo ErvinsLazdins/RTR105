@@ -119,3 +119,5 @@ Garums 23 	 y 	 121
 ```
 ## Analīze
 Programmas darbībā problēmas nav konstatētas, tomēr, vairāk piestrādājot, būtu iespējams saīsināt kodu.
+## Attēli - Histogramma
+![Histogramma](https://github.com/ErvinsLazdins/RTR105/blob/master/darbi/5ld_statistics/histogramma.png)
