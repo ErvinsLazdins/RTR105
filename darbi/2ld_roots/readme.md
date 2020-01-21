@@ -49,4 +49,4 @@ Lai aprēķinātu x vērtību pēc dotās precizitātes, bija jāveic 15 iterāc
 ## Analīze
 
 ## Attēli
-
+![SaknesPunkts](https://github.com/ErvinsLazdins/RTR105/blob/master/darbi/2ld_roots/saknes_punkts.png)
