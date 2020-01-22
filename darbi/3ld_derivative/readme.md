@@ -2,7 +2,7 @@
 
 ## Teorija
 
-dddddddd
+Funkcijas atvasinājums ir viens no matemātiskās analīzes pamatjēdzieniem, kas norāda, cik strauji izmainās funkcijas vērtība kādā dotā punktā.
 
 ## Programmas kods
 ```
