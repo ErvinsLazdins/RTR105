@@ -1,0 +1,390 @@
+R = [R1+R2+R3  -R2         0;
+    -R2         R2+R4+R5  -R5;
+    0          -R5         R5+R6+R7 ]
+Undefined function or variable 'R1'.
+ 
+>> R1=1;R2=2;R3=3;R4=4;R5=5;R6=6;R7=7;
+E1=1;E2=2;E3=3;
+
+R = [R1+R2+R3  -R2         0;
+    -R2         R2+R4+R5  -R5;
+    0          -R5         R5+R6+R7 ]
+
+R =
+
+     6    -2     0
+    -2    11    -5
+     0    -5    18
+
+>> E = [E1 -E2 -E3]'
+
+E =
+
+     1
+    -2
+    -3
+
+>> Ik = R/E
+Error using  / 
+Matrix dimensions must agree.
+ 
+>> % vienadojums uzdots šādi R*Ik=E
+>> % atrisināt var ar gausa izslēgšanas metodi
+>> % kas ir "\" 
+>> Ik = R\E
+
+Ik =
+
+    0.0735
+   -0.2795
+   -0.2443
+
+>> % esam atraduši 3 kontūrstrāvas
+>> % jaatrod UR2 un PR2
+>> IR2 = Ik(1)-Ik(2)
+
+IR2 =
+
+    0.3530
+
+>> UR2=IR2*R2
+
+UR2 =
+
+    0.7060
+
+>> PR2=IR2*UR2
+
+PR2 =
+
+    0.2492
+
+>> % Pieņemsim ka E1,E2,E3 vērtības ir citas
+>> % būs 3 laika komenti, katra Ei bus trīs vērtības
+>> E1[1 -1 0];
+ E1[1 -1 0];
+   ↑
+Error: Invalid expression. When calling a function or indexing a variable, use parentheses. Otherwise, check
+for mismatched delimiters.
+ 
+>> E1=[1 -1 0];
+>> E2=[2 -2 0];
+>> E3=[3 -3 0];
+>> E = [E1; -E2; -E3];
+>> E = [E1; -E2; -E3]
+
+E =
+
+     1    -1     0
+    -2     2     0
+    -3     3     0
+
+>> Ik = R\E
+
+Ik =
+
+    0.0735   -0.0735         0
+   -0.2795    0.2795         0
+   -0.2443    0.2443         0
+
+>> % 1. kontūrstrāva ir pirmajā rindā, otrā otrajā, trešā trešajā
+>> %% ir jāatrod UR3 IR3 PR3
+>> IR3 = Ik(1,:)
+
+IR3 =
+
+    0.0735   -0.0735         0
+
+>> UR3 = IR3*R3
+
+UR3 =
+
+    0.2205   -0.2205         0
+
+>> PR3 = IR3.*UR3
+
+PR3 =
+
+    0.0162    0.0162         0
+
+>> %% vel viens piemērs
+>> % laika mainīgie signāli
+>> t = 0:0.01:1;
+>> E1 = sin(2*pi*5*t);
+>> E2 = 2+zeros(size(t));
+>> E3 = 0.5*cos(2*pi*7*t);
+>> E = [E1; -E2; -E3];
+>> Ik = R\E;
+>> % Uzzīmēsim UR5, PR5
+>> IR5 = Ik(3.:)-Ik(2,:);
+ IR5 = Ik(3.:)-Ik(2,:);
+             ↑
+Error: Invalid expression. When calling a function or indexing a variable, use parentheses. Otherwise, check
+for mismatched delimiters.
+ 
+>> IR5 = Ik(3,:)-Ik(2,:);
+>> UR5 = IR5*R5
+
+UR5 =
+
+  Columns 1 through 10
+
+    0.7246    0.6909    0.6756    0.6780    0.6950    0.7216    0.7520    0.7812    0.8054    0.8226
+
+  Columns 11 through 20
+
+    0.8330    0.8387    0.8422    0.8464    0.8533    0.8633    0.8751    0.8858    0.8918    0.8889
+
+  Columns 21 through 30
+
+    0.8745    0.8472    0.8086    0.7624    0.7147    0.6729    0.6442    0.6348    0.6481    0.6845
+
+  Columns 31 through 40
+
+    0.7405    0.8091    0.8814    0.9468    0.9958    1.0208    1.0176    0.9863    0.9309    0.8594
+
+  Columns 41 through 50
+
+    0.7819    0.7092    0.6514    0.6159    0.6069    0.6242    0.6639    0.7192    0.7811    0.8408
+
+  Columns 51 through 60
+
+    0.8903    0.9240    0.9393    0.9369    0.9199    0.8934    0.8629    0.8337    0.8096    0.7923
+
+  Columns 61 through 70
+
+    0.7819    0.7762    0.7727    0.7685    0.7616    0.7516    0.7398    0.7291    0.7232    0.7260
+
+  Columns 71 through 80
+
+    0.7405    0.7677    0.8063    0.8525    0.9002    0.9420    0.9707    0.9801    0.9668    0.9304
+
+  Columns 81 through 90
+
+    0.8745    0.8058    0.7336    0.6681    0.6191    0.5941    0.5973    0.6287    0.6840    0.7555
+
+  Columns 91 through 100
+
+    0.8330    0.9057    0.9636    0.9990    1.0080    0.9907    0.9510    0.8957    0.8338    0.7741
+
+  Column 101
+
+    0.7246
+
+>> PR5 = UR5.*IR5;
+>> %% uzzīmēsim
+>> plot(t,UR5,t,PR5)
+>> plot(t,UR5,t,PR5)
+>> legend(UR5, Spriegums)
+Undefined function or variable 'Spriegums'.
+ 
+>> legend(UR5)
+Error using legend>process_inputs (line 554)
+Invalid argument. Type 'help legend' for more information.
+
+Error in legend>make_legend (line 306)
+[autoupdate,orient,location,position,children,listen,strings,propargs]
+= process_inputs(ha,argin); %#ok
+
+Error in legend (line 259)
+    make_legend(ha,args(arg:end),version);
+ 
+>> help legend
+  legend Create legend
+  
+  legend creates a legend with descriptive labels for each plotted data
+  series. For the labels, the legend uses the text from the DisplayName
+  properties of the data series. If the DisplayName property is empty, then
+  the legend uses a label of the form 'dataN'. The legend automatically
+  updates when you add or delete data series from the axes. This command
+  creates a legend for the current axes or chart returned by gca. If the
+  current axes is empty, then the legend is empty. If axes do not exist,
+  then this command creates one.
+ 
+  legend(label1,...,labelN) sets the labels. Specify the labels as a
+  list of character vectors, such as legend('Jan','Feb','Mar').
+ 
+  legend(labels) sets the labels using a cell array of character vectors or
+  a character matrix, such as legend({'Jan','Feb','Mar'}).
+ 
+  legend(subset,__) only includes items in the legend for the data series
+  listed in subset. Specify subset as a vector of graphics objects.
+ 
+  legend(target,__) uses the axes, polar axes, or chart specified by target
+  instead of the current axes or chart. Specify the target as the first
+  input argument. 
+ 
+  legend(__,'Location',lcn) sets the legend location. For example,
+  'Location','northeast' positions the legend in the upper right corner of
+  the axes. Specify the location after other input arguments.
+ 
+  legend(__,'Orientation',ornt), where ornt is 'horizontal', displays the
+  legend items side-by-side. The default for ornt is 'vertical', which
+  stacks the items vertically. 
+ 
+  legend(__,Name,Value) sets legend properties using one or more name-value
+  pair arguments. When setting properties, include the labels in a cell
+  array, such as legend({'A','B'},'FontSize',12). If you do not want to
+  specify labels, then include an empty cell array, such as
+  legend({},'FontSize',12). Reissuing the legend command retains
+  modifications that you previously specified.
+ 
+  legend(bkgd), where bkgd is 'boxoff', removes the legend background and
+  outline. The default for bkgd is 'boxon', which displays the legend
+  background and outline. 
+ 
+  lgd = legend(__) returns the Legend object. Use lgd to query and set
+  properties of the legend after it is created. For a list of properties,
+  see Legend. 
+ 
+  [lgd,icons,plots,txt] = legend(__) additionally returns the objects used
+  to create the legend icons, the objects plotted in the graph, and an
+  array of the label text. This syntax is not recommended. Some
+  functionality is not supported. Instead, use the lgd = legend(__) syntax
+  to return the Legend object and set Legend Properties.
+ 
+  legend(vsbl) controls the visibility of the legend, where vsbl is 'hide',
+  'show', or 'toggle'. 
+ 
+  legend('off') deletes the legend.
+ 
+   
+      Examples:
+          x = 0:.2:12;
+          Y = [besselj(1,x); besselj(2,x); besselj(3,x)];
+          plot(x,Y);
+          legend('First','Second','Third','Location','NorthEastOutside')
+   
+          b = bar(rand(10,5),'stacked'); 
+          hold on
+          ln = plot(1:10,5*rand(10,1),'-o'); 
+          hold off
+          legend([b,ln],'Carrots','Peas','Peppers','Green Beans',...
+                    'Cucumbers','Eggplant')
+
+    Reference page for legend
+
+>> legend('U{R5}(t)','P{R5}(t)')
+>> legend('U_{R5}(t)','P_{R5}(t)')
+>> xlabel('t,s')
+>> grid
+>> 
+>> 
+>> %% Kā var uzzīmēt divus dažādus grafikus
+>> %% lai būtu divas neatkarīgas y asis
+>> plotyy(t,UR5,t,PR5)
+>> h = plotyy(t,UR5,t,PR5)
+
+h = 
+
+  1×2 Axes array:
+
+    Axes    Axes
+
+>> ylabel(h(1),'spriegums,V')
+>> ylabel(h(2),'jauda,W')
+>> legend('UR5(t)','PR5(t)')
+>> xlabel('t,s')
+>> grid
+>> %% vēl viens variants kā to izdarīt
+>> figure(2)
+>> yyaxis left
+>> plot(t,UR5)
+>> ylabel('spriegums,V')
+>> xlabel('t,s')
+>> yyaxis right
+>> plot(t,PR5)
+>> ylabel('Jauda,W')
+>> legend('U_{R5}(t)','P_{R5}(t)')
+>> grid
+>> %% kā pārbaudīt rezultātus?
+>> % lai pārbaudītu rezultātus, ja aprēķins bija veikts ar 
+>> % KSM, pārbauda Kirhofa sprieguma likumu
+>> % ja aprēķins bija veikts ar MSM, pārbauda ar Kirhofa strāvas likumu
+>> % visiem mezgliem
+>> 
+>> % Pārbaudīsim Kirhofa sprieguma likumu 3. kontūram
+>> % UR5 + UR6 + UR7 == -E3
+>> % pārvietosim visu uz vienu pusi
+>> % UR5 + UR6 + UR7 + E3 == 0 
+>> % pieškirsim kreiso pusi mainīgajam Utest
+>> % Utest = UR5+UR6+UR7+E3
+>> %% uzzīmēsim, būtu jābūt 0
+>> UR6 = Ik(3,:)*R6;
+>> UR7 = Ik(3,:)*R7;
+>> Utest = UR5+UR6+UR7+E3
+
+Utest =
+
+   1.0e-15 *
+
+  Columns 1 through 6
+
+   -0.2220    0.3331    0.3331   -0.0555         0         0
+
+  Columns 7 through 12
+
+         0         0    0.2776   -0.1110    0.2776    0.0971
+
+  Columns 13 through 18
+
+   -0.0555    0.1665    0.1665    0.2220         0    0.0555
+
+  Columns 19 through 24
+
+   -0.2290    0.1388    0.1110    0.0555   -0.1665    0.1110
+
+  Columns 25 through 30
+
+    0.1665    0.1743   -0.1110    0.2220    0.2220    0.0555
+
+  Columns 31 through 36
+
+   -0.0555   -0.1388    0.3261    0.3053    0.1110    0.0555
+
+  Columns 37 through 42
+
+         0    0.1110    0.0555    0.1943    0.2220         0
+
+  Columns 43 through 48
+
+    0.1665    0.0555    0.1110    0.2220    0.1388    0.1388
+
+  Columns 49 through 54
+
+   -0.1110    0.0555   -0.0555    0.2776   -0.0555    0.0278
+
+  Columns 55 through 60
+
+    0.1249    0.2220    0.3886    0.1110    0.1665    0.1665
+
+  Columns 61 through 66
+
+    0.1388    0.1110   -0.0555   -0.0555    0.0555    0.1665
+
+  Columns 67 through 72
+
+    0.0555    0.1110   -0.0278    0.0555   -0.1665    0.2220
+
+  Columns 73 through 78
+
+    0.1110    0.1665    0.1388    0.0878    0.0833   -0.0555
+
+  Columns 79 through 84
+
+   -0.0555    0.1665   -0.0555    0.1665   -0.1457    0.1388
+
+  Columns 85 through 90
+
+    0.1665    0.2220    0.1665   -0.1110   -0.1110    0.1249
+
+  Columns 91 through 96
+
+    0.2220   -0.0555    0.0555    0.2776    0.0555         0
+
+  Columns 97 through 101
+
+    0.2498   -0.0555    0.1665    0.2776         0
+
+>> figure(3),plot(t,Utest),title('parbaude')
+>> 
